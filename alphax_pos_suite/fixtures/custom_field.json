@@ -1,0 +1,55 @@
+[
+  {
+    "doctype": "Custom Field",
+    "dt": "Mode of Payment",
+    "fieldname": "alphax_capture_terminal_data",
+    "label": "Capture Terminal Data",
+    "fieldtype": "Check",
+    "insert_after": "type",
+    "default": 0
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Mode of Payment",
+    "fieldname": "alphax_terminal_settings",
+    "label": "Terminal Settings",
+    "fieldtype": "Link",
+    "options": "AlphaX POS Payment Terminal Settings",
+    "insert_after": "alphax_capture_terminal_data"
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Mode of Payment",
+    "fieldname": "alphax_require_terminal_approval",
+    "label": "Require Terminal Approval",
+    "fieldtype": "Check",
+    "insert_after": "alphax_terminal_settings",
+    "default": 1
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Mode of Payment",
+    "fieldname": "alphax_allow_manual_ref",
+    "label": "Allow Manual Reference (Fallback)",
+    "fieldtype": "Check",
+    "insert_after": "alphax_require_terminal_approval",
+    "default": 0
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "alphax_is_weighing_item",
+    "label": "Is Weighing Item",
+    "fieldtype": "Check",
+    "insert_after": "barcode",
+    "default": 0
+  },
+  {
+    "doctype": "Custom Field",
+    "dt": "Item",
+    "fieldname": "alphax_scale_item_code",
+    "label": "Scale Item Code",
+    "fieldtype": "Data",
+    "insert_after": "alphax_is_weighing_item"
+  }
+]
